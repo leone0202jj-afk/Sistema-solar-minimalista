@@ -4,7 +4,7 @@
 
 ![Exemplo:](/src/images/example.png)
 
-# Tecnologias usadas
+# Tecnologias utilizada
 
 - HTML 
 - CSS
