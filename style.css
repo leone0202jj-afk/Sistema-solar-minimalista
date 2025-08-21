@@ -1,0 +1,188 @@
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  image-rendering: optimizeSpeed;
+}
+body {
+  margin: 0;
+  background: black;
+  height: 100vh;
+  width: 100%;
+  flex: 1;
+}
+
+.space {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.sun {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  background: yellow;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 60px 20px yellow;
+}
+
+.orbit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px dashed rgba(255,255,255,0.2);
+}
+
+.planet {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  animation: 12s girar linear infinite;
+}
+
+.mercury-orbit {
+  width: 120px;
+  height: 120px;
+  animation: spin 5s linear infinite;
+}
+
+.mercury {
+  width: 10px;
+  height: 10px;
+  background: gray;
+}
+
+.venus-orbit {
+  width: 200px;
+  height: 200px;
+  animation: spin 12.8s linear infinite;
+}
+
+.venus {
+  width: 14px;
+  height: 14px;
+  background: orange;
+}
+
+.earth-orbit {
+  width: 300px;
+  height: 300px;
+  animation: spin 20.7s linear infinite;
+}
+
+.earth {
+  width: 16px;
+  height: 16px;
+  font-size: 16px;
+}
+
+.mars-orbit {
+  width: 370px;
+  height: 370px;
+  animation: spin 39s linear infinite;
+}
+
+.mars {
+  width: 13px;
+  height: 13px;
+  background: #c1440e;
+}
+
+.jupter-orbit {
+  width: 470px;
+  height: 470px;
+  animation: spin 246s linear infinite;
+}
+
+.jupter {
+  width: 35px;
+  height: 35px;
+  background: #FFE4AE;
+}
+
+.saturn-orbit {
+  width: 550px;
+  height: 550px;
+  animation: spin 611s linear infinite;
+}
+
+.saturn {
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
+}
+.uranus-orbit{
+  width: 650px;
+  height: 650px;
+  animation: spin 1742s linear infinite;
+}
+.uranus{
+  width: 27px;
+  height: 27px;
+  background: #aee9e3;
+}
+.neturn-orbit {
+  width: 750px;
+  height: 750px;
+  animation: spin 3420s linear infinite;
+}
+
+.neturn {
+  width: 25px;
+  height: 25px;
+  background: #2d68c4;
+}
+
+@keyframes spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+#ceu-estrelado {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+  background: black;
+  touch-action: none;
+}
+
+.estrela {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: moverEstrela linear infinite;
+}
+
+@keyframes moverEstrela {
+  0% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0;
+  }
+}
