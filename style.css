@@ -5,13 +5,11 @@
   image-rendering: optimizeSpeed;
 }
 body {
-  margin: 0;
   background: black;
   height: 100vh;
 }
-
 .space {
-  position: relative;
+  position: absolute;
   width: 100%;
   height: 100%;
   left: 0;
@@ -51,7 +49,6 @@ body {
   justify-content: center;
   text-align: center;
   animation: 12s girar linear infinite;
-  point-event: none;
 }
 
 .mercury-orbit {
@@ -163,6 +160,7 @@ body {
   right: 0;
   width: 100%;
   height: 100%;
+  overflow: hidden;
   z-index: -1;
   background: black;
   touch-action: none;
@@ -178,7 +176,7 @@ body {
 
 @keyframes moverEstrela {
   0% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
   100% {
     opacity: 0;
