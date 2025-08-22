@@ -9,9 +9,6 @@ function criarEstrelas(qtd = 180) {
     
     const tamanho = Math.random() * 1 + 0.5;
     
-    const delay = Math.random() * 10;
-    const duracao = Math.random() * 15 + 10;
-    
     estrela.classList.add('estrela');
     
     estrela.style.top = `${Math.random() * 100}%`;
