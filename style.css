@@ -4,6 +4,7 @@
   outline: none;
   box-sizing: border-box;
   image-rendering: optimizeSpeed;
+  touch-action: none;
 }
 body {
   margin: 0;
