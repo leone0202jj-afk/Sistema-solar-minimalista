@@ -1,6 +1,6 @@
 # Sistema Solar Minimalista
 
-- Esse Projeto é um sistema solar minimalista ele possui um espaço me estrelado a sua volta
+- Esse Projeto é um sistema solar minimalista ele possui um espaço estrelado a sua volta
 
 ![Exemplo:](/src/images/example.png)
 
